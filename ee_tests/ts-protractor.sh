@@ -12,7 +12,7 @@ validate_config() {
   validate_test_config OSIO_PASSWORD "$OSIO_PASSWORD" || ret=1
 
   # NOTE: github login is used by the import codebase test
-  validate_test_config GITHUB_USERNAME "$GITHUB_USERNAME" || ret=1
+#  validate_test_config GITHUB_USERNAME "$GITHUB_USERNAME" || ret=1
   return $ret
 }
 

@@ -173,3 +173,10 @@ export function targetPlatform(): string {
   return 'fabric8-openshift';
 }
 
+type WorkItemType = 'task' | 'feature' | 'bug';
+
+export interface WorkItem {
+  title: string;
+  description?: string;
+  type?: WorkItemType;
+}
